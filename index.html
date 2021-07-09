@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS cursor Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="myCursor">
+
+    </div>
+
+    <h1><a href="index.html">
+            <span>L</span>
+            <span>I</span>
+            <span>V</span>
+            <span>E</span>
+            <span>.</span>
+            <span>J</span>
+            <span>S</span>
+            <span>.</span>
+            <span>C</span>
+            <span>U</span>
+            <span>R</span>
+            <span>S</span>
+            <span>O</span>
+            <span>R</span>
+            <span>.</span>
+            <span>G</span>
+            <span>E</span>
+            <span>N</span>
+            <span>E</span>
+            <span>R</span>
+            <span>A</span>
+            <span>T</span>
+            <span>O</span>
+            <span>R</span>
+        </a>
+    </h1>
+
+    <div class="mainWrapper">
+        <span class="pleaseSelect">Please select a cursor :</span>
+        <div class="items">
+            <div class="item"><span class="item1"></span></div>
+            <div class="item"><span class="item2"></span></div>
+            <div class="item"><span class="item3"></span></div>
+            <div class="item"><span class="item4"></span></div>
+            <div class="item"><span class="item5">. . . coming</span></div>
+        </div>
+
+        <div class="options">
+            <div class="scale">
+                <label for="scale">Scale :</label>
+                <input type="range" name="scale" id="scale" min="0" max="100" step="0.1" value="50" data-sizing="px">
+            </div>
+            <div class="colors">
+                <label for="coloration">Color :</label>
+                <input type="color" name="coloration" id="coloration" value="#f1f1f1">
+            </div>
+
+            <div class="borderstyle">
+                <label for="borderstyle">BorderStyle :</label>
+                <select name="borderstyle" id="borderstyle">
+                    <option value="solid">Solid</option>
+                    <option value="dashed">Dashed</option>
+                </select>
+            </div>
+
+            <div class="rotate">
+                <label for="rotate">Rotate :</label>
+                <input type="range" name="rotate" id="rotate" min="0" max="360" step="1" value="0" data-sizing="deg">
+            </div>
+
+            <p><a href="index.html">RESET</a></p>
+        </div>
+
+        <div class="code">
+            <div class="html">
+                <h3>HTML Code</h3>
+                <p>Select a cursor and the code will show !</p>
+            </div>
+
+            <div class="css">
+                <h3>CSS Code</h3>
+                <p>Select a cursor and the code will show !</p>
+            </div>
+
+            <div class="js">
+                <h3>JS Code</h3>
+                <p>Select a cursor and the code will show !</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
