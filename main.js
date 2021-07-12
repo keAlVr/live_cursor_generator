@@ -5,17 +5,17 @@ const item2 = document.querySelector('.item2')
 const item3 = document.querySelector('.item3')
 const item4 = document.querySelector('.item4')
 
-const cursorStyle1 = document.querySelector('.cursorStyle1')
-const cursorStyle2 = document.querySelector('.cursorStyle2')
-const cursorStyle3 = document.querySelector('.cursorStyle3')
-const cursorStyle4 = document.querySelector('.cursorStyle4')
-
 const allInputs = document.querySelectorAll('.options input')
 
 function moving() {
     document.addEventListener('mousemove', (e) => {
-        cursor.style.top = e.pageY - 10 + 'px';
-        cursor.style.left = e.pageX - 10 + 'px';
+
+        let customSize = document.querySelector('.globalCustomSize')
+        let h = customSize.clientHeight;
+        let w = customSize.clientWidth;
+
+        cursor.style.top = e.pageY - h/2 + 'px';
+        cursor.style.left = e.pageX - w/2 + 'px';
     })
 }
 
@@ -27,26 +27,26 @@ function handleUpdate() {
 }
 
 item1.addEventListener('click', () => {
-    if (cursor.className != cursorStyle1) {
-        cursor.className = ('myCursor cursorStyle1')
+    if (cursor.className != ('cursorStyle1')) {
+        cursor.className = ('myCursor cursorStyle1 globalCustomSize')
     }
     moving()
 })
 item2.addEventListener('click', () => {
-    if (cursor.className != cursorStyle2) {
-        cursor.className = ('myCursor cursorStyle2')
+    if (cursor.className != ('cursorStyle2')) {
+        cursor.className = ('myCursor cursorStyle2 globalCustomSize')
     }
     moving()
 })
 item3.addEventListener('click', () => {
-    if (cursor.className != cursorStyle3) {
-        cursor.className = ('myCursor cursorStyle3')
+    if (cursor.className != ('cursorStyle3')) {
+        cursor.className = ('myCursor cursorStyle3 globalCustomSize')
     }
     moving()
 })
 item4.addEventListener('click', () => {
-    if (cursor.className != cursorStyle4) {
-        cursor.className = ('myCursor cursorStyle4')
+    if (cursor.className != ('cursorStyle4')) {
+        cursor.className = ('myCursor cursorStyle4 globalCustomSize')
     }
     moving()
 })

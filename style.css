@@ -94,9 +94,13 @@ h1 a{
     border: 2px solid #f1f1f1;
 }
 
-.cursorStyle1{
+.globalCustomSize{
     height: var(--scale);
     width: var(--scale);
+}
+
+
+.cursorStyle1{
     border: 2px var(--borderstyle) var(--coloration);
     transform: rotate(var(--rotate));
 }
@@ -114,8 +118,6 @@ h1 a{
 }
 
 .cursorStyle2{
-    height: var(--scale);
-    width: var(--scale);
     border: 2px var(--borderstyle) var(--coloration);
     border-radius: 50%;
     transform: rotate(var(--rotate));
@@ -140,15 +142,11 @@ h1 a{
 }
 
 .cursorStyle3{
-    height: var(--scale);
-    width: var(--scale);
     border-top: 2px var(--borderstyle) var(--coloration);
     border-left: 2px var(--borderstyle) var(--coloration);
     border-right: transparent;
     border-bottom: transparent;
     background-color: transparent;
-    position: absolute;
-    top: 25px;
     transform: rotate(var(--rotate));
 }
 
